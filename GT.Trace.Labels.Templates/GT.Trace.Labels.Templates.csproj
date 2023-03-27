@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CA47F837-A289-4B2B-A774-8779343F7285}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GT.Trace.Labels.Templates</RootNamespace>
+    <AssemblyName>GT.Trace.Labels.Templates</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.Data.v17.1\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.Data.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.DataAccess.v17.1\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.DataAccess.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.Printing.v17.1.Core\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.Printing.v17.1.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.Utils.v17.1\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.Utils.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.Utils.v17.1.UI\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.Utils.v17.1.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Core.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.Xpf.Core.v17.1\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.Xpf.Core.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpf.Grid.v17.1.Core, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Printing.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.Xpf.Printing.v17.1\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.Xpf.Printing.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.Xpo.v17.1\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.Xpo.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.XtraEditors.v17.1\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.XtraEditors.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.XtraPrinting.v17.1\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.XtraPrinting.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.17.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\Windows\Microsoft.NET\assembly\GAC_MSIL\DevExpress.XtraReports.v17.1\v4.0_17.1.17.0__b88d1754d700e49a\DevExpress.XtraReports.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="MediatR, Version=9.0.0.0, Culture=neutral, PublicKeyToken=bb9a41a5e8aaa7e2, processorArchitecture=MSIL">
+      <HintPath>..\packages\MediatR.9.0.0\lib\net461\MediatR.dll</HintPath>
+    </Reference>
+    <Reference Include="MediatR.Extensions.Microsoft.DependencyInjection, Version=9.0.0.0, Culture=neutral, PublicKeyToken=bb9a41a5e8aaa7e2, processorArchitecture=MSIL">
+      <HintPath>..\packages\MediatR.Extensions.Microsoft.DependencyInjection.9.0.0\lib\netstandard2.0\MediatR.Extensions.Microsoft.DependencyInjection.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Extensions.DependencyInjection.Abstractions.6.0.0\lib\net461\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="JuniorLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="JuniorLabel.Designer.cs">
+      <DependentUpon>JuniorLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LabelBase.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MasterLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MasterLabel.Designer.cs">
+      <DependentUpon>MasterLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MaterialReturnLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MaterialReturnLabel.Designer.cs">
+      <DependentUpon>MaterialReturnLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PickingUnitLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PickingUnitLabel.Designer.cs">
+      <DependentUpon>PickingUnitLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceCollectionEx.cs" />
+    <Compile Include="SubAssemblyEtiLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SubAssemblyEtiLabel.Designer.cs">
+      <DependentUpon>SubAssemblyEtiLabel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UseCases\PrintingRequest.cs" />
+    <Compile Include="UseCases\PrintReturnLabel\PrintReturnLabelHandler.cs" />
+    <Compile Include="UseCases\PrintReturnLabel\PrintReturnLabelRequest.cs" />
+    <Compile Include="UseCases\PrintPickingLabel\PrintPickingLabelHandler.cs" />
+    <Compile Include="UseCases\PrintPickingLabel\PrintPickingLabelRequest.cs" />
+    <Compile Include="UseCases\PrintMasterLabel\PrintMasterLabelHandler.cs" />
+    <Compile Include="UseCases\PrintMasterLabel\PrintMasterLabelRequest.cs" />
+    <Compile Include="UseCases\PrintJuniorLabel\PrintJuniorLabelHandler.cs" />
+    <Compile Include="UseCases\PrintJuniorLabel\PrintJuniorLabelRequest.cs" />
+    <Compile Include="UseCases\PrintAteqLabel\PrintAteqLabelHandler.cs" />
+    <Compile Include="UseCases\PrintAteqLabel\PrintAteqLabelRequest.cs" />
+    <Compile Include="UseCases\PrintPartialLabel\PrintPartialLabelHandler.cs" />
+    <Compile Include="UseCases\PrintPartialLabel\PrintPartialLabelRequest.cs" />
+    <Compile Include="UseCases\PrintSubAssemblyLabel\PrintSubAssemblyLabelHandler.cs" />
+    <Compile Include="UseCases\PrintSubAssemblyLabel\PrintSubAssemblyLabelRequest.cs" />
+    <Compile Include="UseCases\PrintIndividualLabel\PrintIndividualLabelHandler.cs" />
+    <Compile Include="UseCases\PrintIndividualLabel\PrintIndividualLabelRequest.cs" />
+    <Compile Include="UseCases\PrintWipLabel\PrintWipLabelHandler.cs" />
+    <Compile Include="UseCases\PrintWipLabel\PrintWipLabelRequest.cs" />
+    <Compile Include="WipLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="WipLabel.Designer.cs">
+      <DependentUpon>WipLabel.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="JuniorLabel.resx">
+      <DependentUpon>JuniorLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterLabel.resx">
+      <DependentUpon>MasterLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaterialReturnLabel.resx">
+      <DependentUpon>MaterialReturnLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PickingUnitLabel.resx">
+      <DependentUpon>PickingUnitLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubAssemblyEtiLabel.resx">
+      <DependentUpon>SubAssemblyEtiLabel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WipLabel.resx">
+      <DependentUpon>WipLabel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO-GT2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

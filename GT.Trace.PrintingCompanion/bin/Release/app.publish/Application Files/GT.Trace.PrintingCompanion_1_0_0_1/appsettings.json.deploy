@@ -1,0 +1,8 @@
+﻿{
+  "PointOfUseServiceApiUri": "http://mxsrvapps/gtt/services/materialloading/hubs/pointsofuse",
+  "LineCode": "LB",
+  "SignalRHubUris": {
+    "EtiMovementsSignalRClient": "http://mxsrvapps/gtt/services/etimovements/hubs/etimovements",
+    "PointsOfUseSignalRClient": "http://mxsrvapps.gt.local/gtt/services/materialloading/hubs/pointsofuse"
+  }
+}

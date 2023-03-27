@@ -1,0 +1,16 @@
+﻿<Window x:Class="GT.Trace.Labels.WpfPrintingClient.Windows.PromptLineCode.PromptLineCodeWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GT.Trace.Labels.WpfPrintingClient.Windows.PromptLineCode"
+        mc:Ignorable="d"
+        Title="Código de Línea" Height="116" Width="249" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Border Padding="5">
+        <StackPanel>
+            <TextBlock Text="Ingrese el código de la línea:" Margin="0,0,0,5" />
+            <TextBox x:Name="LineCodeInput" Margin="0,0,0,5" />
+            <Button Content="OK" Click="OKButton_Click" />
+        </StackPanel>
+    </Border>
+</Window>

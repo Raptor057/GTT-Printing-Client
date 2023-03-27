@@ -1,0 +1,4 @@
+﻿{
+  "PointOfUseServiceApiUri": "http://mxsrvapps/gtt/services/materialloading/hubs/pointsofuse",
+  "LineCode": "LO"
+}

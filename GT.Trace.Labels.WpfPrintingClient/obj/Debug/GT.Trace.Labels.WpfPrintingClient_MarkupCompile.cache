@@ -1,0 +1,20 @@
+﻿GT.Trace.Labels.WpfPrintingClient
+
+
+winexe
+C#
+.cs
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.WpfPrintingClient\obj\Debug\
+GT.Trace.Labels.WpfPrintingClient
+none
+false
+DEBUG;TRACE
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.WpfPrintingClient\App.xaml
+5-916971758
+3-1307139100
+211725882012
+1601608260139
+Settings\PrinterNameEditor.xaml;Windows\MainWindow\ArchiveUserControl\ArchiveUserControl.xaml;Windows\MainWindow\MainWindow.xaml;Windows\PrinterSelection\PrinterSelectionWindow.xaml;Windows\PromptLineCode\PromptLineCodeWindow.xaml;
+
+True
+

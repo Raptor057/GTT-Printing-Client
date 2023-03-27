@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.Trace.PrintingCompanion", "GT.Trace.PrintingCompanion\GT.Trace.PrintingCompanion.csproj", "{1AE57778-21CF-40FA-AD9B-60D71B1CD04A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.Trace.Labels.WpfPrintingClient", "GT.Trace.Labels.WpfPrintingClient\GT.Trace.Labels.WpfPrintingClient.csproj", "{FF471440-D9B5-49BF-90D5-8CDE359FF31D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.Trace.Labels.Templates", "GT.Trace.Labels.Templates\GT.Trace.Labels.Templates.csproj", "{CA47F837-A289-4B2B-A774-8779343F7285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.Trace.Labels.App", "GT.Trace.Labels.App\GT.Trace.Labels.App.csproj", "{8657CCF3-5D44-43E0-96B8-F907E4C01329}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GT.Trace.Labels.Infra", "GT.Trace.Labels.Infra\GT.Trace.Labels.Infra.csproj", "{AC452A5A-9AF0-4113-93C9-712354DAA086}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1AE57778-21CF-40FA-AD9B-60D71B1CD04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AE57778-21CF-40FA-AD9B-60D71B1CD04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AE57778-21CF-40FA-AD9B-60D71B1CD04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AE57778-21CF-40FA-AD9B-60D71B1CD04A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF471440-D9B5-49BF-90D5-8CDE359FF31D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF471440-D9B5-49BF-90D5-8CDE359FF31D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF471440-D9B5-49BF-90D5-8CDE359FF31D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF471440-D9B5-49BF-90D5-8CDE359FF31D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA47F837-A289-4B2B-A774-8779343F7285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA47F837-A289-4B2B-A774-8779343F7285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA47F837-A289-4B2B-A774-8779343F7285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA47F837-A289-4B2B-A774-8779343F7285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8657CCF3-5D44-43E0-96B8-F907E4C01329}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8657CCF3-5D44-43E0-96B8-F907E4C01329}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8657CCF3-5D44-43E0-96B8-F907E4C01329}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8657CCF3-5D44-43E0-96B8-F907E4C01329}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC452A5A-9AF0-4113-93C9-712354DAA086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC452A5A-9AF0-4113-93C9-712354DAA086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC452A5A-9AF0-4113-93C9-712354DAA086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC452A5A-9AF0-4113-93C9-712354DAA086}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD528E49-3DBD-485F-B294-030346DFDED8}
+	EndGlobalSection
+EndGlobal

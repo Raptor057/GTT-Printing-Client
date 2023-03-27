@@ -1,0 +1,87 @@
+﻿<Window xmlns:MainWindow="clr-namespace:GT.Trace.Labels.WpfPrintingClient.Windows.MainWindow"  xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        x:Class="GT.Trace.Labels.WpfPrintingClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GT.Trace.Labels.WpfPrintingClient"
+        mc:Ignorable="d"
+        Title="{Binding WindowTitle}" Height="635" Width="930" Background="WhiteSmoke" Icon="icons8-label-printer-32.png">
+    <Border Padding="3">
+        <DockPanel>
+            <Border Padding="3" DockPanel.Dock="Bottom" Height="150">
+                <ScrollViewer VerticalScrollBarVisibility="Auto">
+                    <ItemsControl Background="#333" ItemsSource="{Binding Path=Events, Mode=OneWay}" FontFamily="Courier New" Foreground="White">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border Padding="2">
+                                    <StackPanel Orientation="Horizontal">
+                                        <TextBlock Text="{Binding Path=TimeStamp, StringFormat=dd HH:mm:ss}" />
+                                        <TextBlock Text=". " />
+                                        <TextBlock Text="{Binding Path=Message}" />
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Border>
+            <DockPanel>
+                <Border Padding="3" DockPanel.Dock="Right" Width="300px">
+                    <xctk:PropertyGrid SelectedObject="{Binding PrintingConfiguration}" />
+                </Border>
+                <Border Padding="3">
+                    <TabControl>
+                        <TabItem>
+                            <TabItem.Header>Cola de Impresión</TabItem.Header>
+                            <ListView SelectedIndex="{Binding SelectedPrintingRequestIndex, Mode=OneWayToSource}" ItemsSource="{Binding Path=PrintingRequests}">
+                                <ListView.Resources>
+                                    <Style TargetType="GridViewColumnHeader">
+                                        <Setter Property="HorizontalContentAlignment" Value="Left" />
+                                    </Style>
+                                </ListView.Resources>
+                                <ListView.ItemContainerStyle>
+                                    <Style TargetType="ListViewItem">
+                                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                                    </Style>
+                                </ListView.ItemContainerStyle>
+                                <ListView.View>
+                                    <GridView AllowsColumnReorder="False">
+                                        <GridViewColumn Width="75">
+                                            <GridViewColumn.Header>
+                                                <GridViewColumnHeader HorizontalContentAlignment="Right">Folio</GridViewColumnHeader>
+                                            </GridViewColumn.Header>
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding LabelID}" TextAlignment="Right" />
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Header="Tipo" DisplayMemberBinding="{Binding Type}" Width="200" />
+                                        <GridViewColumn Width="75">
+                                            <GridViewColumn.Header>
+                                                <GridViewColumnHeader HorizontalContentAlignment="Right">Piezas</GridViewColumnHeader>
+                                            </GridViewColumn.Header>
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <TextBlock Text="{Binding Quantity}" TextAlignment="Right" />
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Header="Creación" DisplayMemberBinding="{Binding CreationTime}" Width="150" />
+                                    </GridView>
+                                </ListView.View>
+                            </ListView>
+                        </TabItem>
+                        <TabItem>
+                            <TabItem.Header>
+                                Archivo
+                            </TabItem.Header>
+                            <MainWindow:ArchiveUserControl DataContext="{Binding Archive}" />
+                        </TabItem>
+                    </TabControl>
+                </Border>
+            </DockPanel>
+        </DockPanel>
+    </Border>
+</Window>
