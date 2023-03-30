@@ -314,7 +314,6 @@ namespace GT.Trace.Labels.Templates
             this.DateLabel.Name = "DateLabel";
             this.DateLabel.Size = new System.Drawing.Size(164, 22);
             this.DateLabel.TabIndex = 161;
-            this.DateLabel.Text = "6-Jan-2020";
             this.DateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // WinControlContainer19
@@ -345,12 +344,12 @@ namespace GT.Trace.Labels.Templates
             // LineNameLabel
             // 
             this.LineNameLabel.BackColor = System.Drawing.Color.White;
-            this.LineNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LineNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LineNameLabel.Location = new System.Drawing.Point(371, 219);
             this.LineNameLabel.Name = "LineNameLabel";
             this.LineNameLabel.Size = new System.Drawing.Size(136, 22);
             this.LineNameLabel.TabIndex = 161;
-            this.LineNameLabel.Text = "RIDER LD";
+            this.LineNameLabel.Text = "RIDER LD\r\nMADE IN XXXXXXX";
             this.LineNameLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // WinControlContainer17

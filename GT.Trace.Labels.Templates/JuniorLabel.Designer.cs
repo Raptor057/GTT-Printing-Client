@@ -162,7 +162,6 @@ namespace GT.Trace.Labels.Templates
             this.ApprovalDateLabel.Name = "ApprovalDateLabel";
             this.ApprovalDateLabel.Size = new System.Drawing.Size(75, 18);
             this.ApprovalDateLabel.TabIndex = 161;
-            this.ApprovalDateLabel.Text = "6-Jan-2020";
             this.ApprovalDateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // WinControlContainer27
@@ -180,7 +179,6 @@ namespace GT.Trace.Labels.Templates
             this.ApproverLabel.Name = "ApproverLabel";
             this.ApproverLabel.Size = new System.Drawing.Size(75, 18);
             this.ApproverLabel.TabIndex = 161;
-            this.ApproverLabel.Text = "dceballos";
             this.ApproverLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // WinControlContainer26
@@ -331,12 +329,12 @@ namespace GT.Trace.Labels.Templates
             this.WinControlContainer18.SizeF = new System.Drawing.SizeF(141.9584F, 23F);
             this.WinControlContainer18.WinControl = this.LineNameLabel;
             // 
-            // LineCodeLabel
+            // LineNameLabel
             // 
             this.LineNameLabel.BackColor = System.Drawing.Color.White;
             this.LineNameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LineNameLabel.Location = new System.Drawing.Point(371, 219);
-            this.LineNameLabel.Name = "LineCodeLabel";
+            this.LineNameLabel.Name = "LineNameLabel";
             this.LineNameLabel.Size = new System.Drawing.Size(136, 22);
             this.LineNameLabel.TabIndex = 161;
             this.LineNameLabel.Text = "RIDER LD";
