@@ -4,7 +4,7 @@ namespace GT.Trace.Labels.Templates
 {
     public partial class MasterLabel
     {
-        public MasterLabel(string po, string julianDate, string customerPartNo, string revision, string partNo, string customer, string partDescription, DateTime date, int quantity, string lineName, long masterID, string approver, DateTime? approvalDate)
+        public MasterLabel(string po, string julianDate, string customerPartNo, string revision, string partNo, string customer, string partDescription, DateTime date, int quantity, string lineName, long masterID, string approver, DateTime? approvalDate, string Origen)
         {
             InitializeComponent();
 
@@ -21,7 +21,8 @@ namespace GT.Trace.Labels.Templates
             PartDescriptionLabel.Text = partDescription;
             DateLabel.Text = date.ToString("dd-MMM-yyy HH:mm:ss");
             QuantityLabel.Text = quantity.ToString();
-            LineNameLabel.Text = lineName;
+            LineNameLabel.Text = $"{lineName} \n {Origen}";
+            //LineNameLabel.Text = $"{lineName}";
             FolioLabel.Text = $"M{masterID}";
             ApproverLabel.Text = approver;
             ApprovalDateLabel.Text = approvalDate?.ToString("dd-MMM-yy");

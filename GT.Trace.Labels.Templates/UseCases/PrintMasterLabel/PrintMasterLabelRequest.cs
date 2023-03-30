@@ -38,5 +38,8 @@ namespace GT.Trace.Labels.Templates.UseCases.PrintMasterLabel
         public DateTime? ApprovalDate { get; set; }
 
         public long MasterID { get; set; }
+
+        //Se agrega el Origen de a la etiqueta master.
+        public string Origen { get; set; }
     }
 }

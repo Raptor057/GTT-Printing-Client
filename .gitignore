@@ -164,4 +164,7 @@ typings/
 /GT.Trace.Labels.App/bin/Debug/GT.Trace.Labels.App.dll
 /GT.Trace.Labels.App/bin/Debug/GT.Trace.Labels.App.pdb
 /GT.Trace.Labels.WpfPrintingClient/obj/Debug/GT.Trace.Labels.WpfPrintingClient.application
-/GT.Trace.Labels.WpfPrintingClient/bin/Debug/GT.Trace.Labels.WpfPrintingClient.application
+*/obj/
+*/obj
+*/bin/
+*/bin

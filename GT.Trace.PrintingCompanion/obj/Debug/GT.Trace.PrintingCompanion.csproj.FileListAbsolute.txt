@@ -297,3 +297,11 @@ C:\Dev\Old\Git\GTTSystem\NetFramework4\GTT Printing Client\GT.Trace.PrintingComp
 C:\Dev\Old\Git\GTTSystem\NetFramework4\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.csproj.GenerateResource.cache
 C:\Dev\Old\Git\GTTSystem\NetFramework4\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.exe.licenses
 C:\Dev\Old\Git\GTTSystem\NetFramework4\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.csproj.CoreCompileInputs.cache
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.csproj.AssemblyReference.cache
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.exe.config
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.MainForm.resources
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.SelectPrinterForm.resources
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.Properties.Resources.resources
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.csproj.GenerateResource.cache
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.exe.licenses
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.PrintingCompanion\obj\Debug\GT.Trace.PrintingCompanion.csproj.CoreCompileInputs.cache

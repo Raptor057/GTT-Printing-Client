@@ -21,7 +21,9 @@ namespace GT.Trace.Labels.Templates.UseCases.PrintMasterLabel
                 request.LineName,
                 request.MasterID,
                 request.Approver,
-                request.ApprovalDate))
+                request.ApprovalDate,
+                //Se agrega el Origen para ingresar en las etiquetas.
+                request.Origen))
             {
                 label.CreateAndPrintDocument(request);
             }

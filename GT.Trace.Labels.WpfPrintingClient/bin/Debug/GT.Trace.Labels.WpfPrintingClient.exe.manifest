@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="GT.Trace.Labels.WpfPrintingClient.exe" version="1.0.0.4" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="GT.Trace.Labels.WpfPrintingClient.exe" version="1.0.0.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="icons8-label-printer-32.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -1370,7 +1370,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>GsO1VLhn39Pfz6EssAY34Ua+DIH9swh8ujq3a4xdw14=</dsig:DigestValue>
+        <dsig:DigestValue>LwSnPaPLUhb3yFeZdXq4h4xAFx86RPqA3GN7yBAnhSs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1382,19 +1382,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>eMFCLLYDZngCtd6WTNWadK83l1WJkWqQj+50z54nY4k=</dsig:DigestValue>
+        <dsig:DigestValue>98ajLHEGPG3olyDA4Ls6aae4SujFqT5VIHY3Zh8GhD0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GT.Trace.Labels.Templates.dll" size="224768">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GT.Trace.Labels.Templates.dll" size="225280">
       <assemblyIdentity name="GT.Trace.Labels.Templates" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MIUYHjLgWvWie4LyhQGX+bc8UxkU7EGqqelZRaNNAzw=</dsig:DigestValue>
+        <dsig:DigestValue>ifbpsEFVsw71dQi7Zz8FmGFGzIPa6N1ZBivr2sP3KOs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -1406,7 +1406,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZRl+GziKlWGvaJNL8DyFKmskbN4U4AwJRkD/3/BqiRw=</dsig:DigestValue>
+        <dsig:DigestValue>AhBvxdXy+Frc2W0wqQRBXUhxN1huG8iOaGTQeZ1GZxQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

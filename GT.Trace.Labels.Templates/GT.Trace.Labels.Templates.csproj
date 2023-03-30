@@ -168,6 +168,9 @@
     <EmbeddedResource Include="JuniorLabel.resx">
       <DependentUpon>JuniorLabel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LabelBase.resx">
+      <DependentUpon>LabelBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MasterLabel.resx">
       <DependentUpon>MasterLabel.cs</DependentUpon>
     </EmbeddedResource>
