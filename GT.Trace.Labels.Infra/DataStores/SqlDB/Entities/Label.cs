@@ -24,5 +24,8 @@ namespace GT.Trace.Labels.Infra.DataStores.SqlDB.Entities
         public DateTime? LastUtcPrintingTime { get; set; }
 
         public bool? LastPrintingSuccessStatus { get; set; }
+
+        //Se agrego Campo Origen Faltante RA: 04 / 19 /2023
+        public string Origen { get; set; }
     }
 }

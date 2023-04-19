@@ -82,6 +82,9 @@ namespace GT.Trace.Labels.Infra.Services
             public long? MasterID { get; set; }
 
             public int Quantity { get; set; }
+
+            //Se agrego Campo Origen Faltante RA: 04 / 19 /2023
+            public string Origen { get; set; }
         }
 
         private class ContainerJsonData
@@ -118,6 +121,7 @@ namespace GT.Trace.Labels.Infra.Services
                 MessageBus.PassMessage("Etiqueta de tarima llena recibida.");
                 PalletJsonData master = JsonConvert.DeserializeObject<PalletJsonData>(jsonData);
                 DateTime date = DateTime.Now;
+
                 if (master.IsPartial)
                 {
                     _labels.SaveLabel(new PartialLabelDto
@@ -178,7 +182,9 @@ namespace GT.Trace.Labels.Infra.Services
                         PurchaseOrderNo = master.PurchaseOrderNo,
                         Quantity = master.Quantity,
                         Revision = master.Revision,
-                        LineName = master.LineName
+                        LineName = master.LineName,
+                        Origen = master.Origen //se agrego el origen aqui para agregarlo en la master
+                        //hasta aqui todo al millon.
                     });
                 }
             }

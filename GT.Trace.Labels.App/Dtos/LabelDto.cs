@@ -28,5 +28,7 @@ namespace GT.Trace.Labels.App.Dtos
         public bool IsNew => !LastPrintingTime.HasValue;
 
         public bool IsFailure => !(LastPrintingSuccessStatus ?? true);
+
+        public string Origen { get; set; } //Se agrego Campo Origen Faltante RA: 04 / 19 /2023
     }
 }

@@ -91,6 +91,7 @@ namespace GT.Trace.Labels.Infra.Services
                 Quantity = label.Quantity,
                 Revision = label.Revision,
                 MasterID = label.MasterID.Value,
+                Origen = label.Origen //Se agrego Campo Origen Faltante RA: 04 / 19 /2023
             };
             _ = await _mediator.Send(request).ConfigureAwait(false);
         }

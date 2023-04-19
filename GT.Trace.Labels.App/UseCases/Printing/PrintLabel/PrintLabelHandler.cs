@@ -47,7 +47,7 @@ namespace GT.Trace.Labels.App.UseCases.Printing.PrintLabel
 
         public async Task<PrintLabelResponse> Handle(PrintLabelRequest request, CancellationToken cancellationToken)
         {
-            LabelDto label = _labels.FindLabel(request.Label.LabelID) as LabelDto;
+            LabelDto label = _labels.FindLabel(request.Label.LabelID) as LabelDto; //Analisar estas 2 lineas NOTA.
             string fullPrinterName = _settings.GetPrinter(label.Type).Value;
             int printCopies = _settings.GetCopies(label.Type).Value;
 

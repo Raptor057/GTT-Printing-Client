@@ -120,6 +120,7 @@ namespace GT.Trace.Labels.Infra.Gateways
                                     Quantity = label.Quantity,
                                     MasterID = container.MasterID,
                                     LineName = label.LineName
+                                    
                                 };
 
                             case LabelTypes.Junior:
@@ -164,7 +165,9 @@ namespace GT.Trace.Labels.Infra.Gateways
                                     Quantity = label.Quantity,
                                     Revision = container.Revision,
                                     MasterID = container.MasterID.Value,
-                                    LineName = label.LineName
+                                    LineName = label.LineName,
+                                    Origen = label.Origen //Se agrego Campo Origen Faltante RA: 04 / 19 /2023
+
                                 };
 
                             case LabelTypes.Partial:
@@ -280,7 +283,8 @@ namespace GT.Trace.Labels.Infra.Gateways
                         LineCode = baseLabel.LineCode,
                         LineName = baseLabel.LineName,
                         Quantity = baseLabel.Quantity,
-                        LabelTypeID = (int)baseLabel.Type
+                        LabelTypeID = (int)baseLabel.Type,
+                        Origen = baseLabel.Origen //se agrego esto a ver si jala, la verdad no lo se
                     };
                     _ = con.Insert(dbLabel);
                     baseLabel.LabelID = dbLabel.LabelID;
