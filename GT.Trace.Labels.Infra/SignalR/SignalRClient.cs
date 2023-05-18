@@ -47,13 +47,16 @@ namespace GT.Trace.Labels.Infra.SignalR
             MessageBus = messageBus;
 
             LineCode = configuration.GetSection("LineCode").Value;
+            #if DEBUG
             _remoteUrl = configuration.GetSection($"SignalRHubUris:{GetType().Name}").Value;
-
+            #else
+            _remoteUrl = configuration.GetSection($"SignalRHubUrisDev:{GetType().Name}").Value;
+            #endif
             _connection = new HubConnectionBuilder()
                 .WithAutomaticReconnect()
                 .WithUrl(_remoteUrl)
                 .Build();
-
+            
             _cts = new CancellationTokenSource();
         }
 
