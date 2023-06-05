@@ -16,6 +16,7 @@ namespace GT.Trace.Labels.Infra.Services
 {
     internal sealed class DevExpressLabelPrintingService : ILabelPrintingService
     {
+        //Estas son las solicitudes de impresion de las etiquetas, aqui ya llegan para ser impresas en la impresora predeterminada
         private readonly IMediator _mediator;
 
         public DevExpressLabelPrintingService(IMediator mediator)
