@@ -61,5 +61,10 @@ namespace GT.Trace.Labels.WpfPrintingClient
                 });
             }
         }
+
+        private void ArchiveUserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
