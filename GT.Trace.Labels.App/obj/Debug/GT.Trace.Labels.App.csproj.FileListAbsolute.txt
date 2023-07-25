@@ -214,7 +214,6 @@ C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.App\bin\Deb
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.App\bin\Debug\MediatR.Extensions.Microsoft.DependencyInjection.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.App\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.App\bin\Debug\Newtonsoft.Json.dll
-C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.App\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.App\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.App\bin\Debug\MediatR.xml
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.App\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
