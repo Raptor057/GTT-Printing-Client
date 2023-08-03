@@ -991,4 +991,4 @@ C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.WpfPrinting
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.WpfPrintingClient\obj\Debug\GT.Trace.Labels.WpfPrintingClient.csproj.CopyComplete
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.WpfPrintingClient\obj\Debug\GT.Trace.Labels.WpfPrintingClient.exe
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.WpfPrintingClient\obj\Debug\GT.Trace.Labels.WpfPrintingClient.pdb
-C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.WpfPrintingClient\obj\Debug\GT.Trace.Labels.WpfPrintingClient.csproj.SuggestedBindingRedirects.cache
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.WpfPrintingClient\bin\Debug\runtimes\win-arm\native\e_sqlite3.dll

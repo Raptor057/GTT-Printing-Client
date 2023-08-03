@@ -20,6 +20,11 @@ namespace GT.Trace.Labels.Infra.Services
             _lineCode = lineCode;
             _labels = labels;
         }
+        public async Task StartAsync()
+        {
+            On<string, long, string, string, string, int, DateTime> ("EtiCreated", OnSubAssemblyCreated);
+            await Start().ConfigureAwait(false);
+        }
 
         public Task OnSubAssemblyCreated(string lineCode, long etiID, string partNo, string revision, string partDescription, int quantity, DateTime utcTimeStamp)
         {
@@ -39,11 +44,6 @@ namespace GT.Trace.Labels.Infra.Services
                 });
             }
             return Task.CompletedTask;
-        }
-
-        public async Task StartAsync()
-        {
-            await Start().ConfigureAwait(false);
         }
     }
 }

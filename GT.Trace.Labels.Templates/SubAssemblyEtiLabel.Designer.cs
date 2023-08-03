@@ -31,9 +31,11 @@ namespace GT.Trace.Labels.Templates
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraPrinting.BarCode.EAN128Generator eaN128Generator1 = new DevExpress.XtraPrinting.BarCode.EAN128Generator();
+            DevExpress.XtraPrinting.BarCode.QRCodeGenerator qrCodeGenerator1 = new DevExpress.XtraPrinting.BarCode.QRCodeGenerator();
             this.Detail = new DevExpress.XtraReports.UI.DetailBand();
             this.xrPanel1 = new DevExpress.XtraReports.UI.XRPanel();
+            this.LotNoLabel = new DevExpress.XtraReports.UI.XRLabel();
+            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
             this.xrLabel5 = new DevExpress.XtraReports.UI.XRLabel();
             this.accountEmpl = new DevExpress.XtraReports.UI.XRLabel();
             this.PartDescriptionLabel = new DevExpress.XtraReports.UI.XRLabel();
@@ -55,8 +57,6 @@ namespace GT.Trace.Labels.Templates
             this.xrLabel1 = new DevExpress.XtraReports.UI.XRLabel();
             this.TopMargin = new DevExpress.XtraReports.UI.TopMarginBand();
             this.BottomMargin = new DevExpress.XtraReports.UI.BottomMarginBand();
-            this.xrLabel6 = new DevExpress.XtraReports.UI.XRLabel();
-            this.LotNoLabel = new DevExpress.XtraReports.UI.XRLabel();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // Detail
@@ -98,11 +98,39 @@ namespace GT.Trace.Labels.Templates
             this.xrPanel1.SizeF = new System.Drawing.SizeF(285F, 479.3749F);
             this.xrPanel1.StylePriority.UseBorders = false;
             // 
+            // LotNoLabel
+            // 
+            this.LotNoLabel.CanGrow = false;
+            this.LotNoLabel.Font = new System.Drawing.Font("Verdana", 7F, System.Drawing.FontStyle.Bold);
+            this.LotNoLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 265.9501F);
+            this.LotNoLabel.Name = "LotNoLabel";
+            this.LotNoLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.LotNoLabel.SizeF = new System.Drawing.SizeF(263.9584F, 28.79205F);
+            this.LotNoLabel.StylePriority.UseFont = false;
+            this.LotNoLabel.StylePriority.UseTextAlignment = false;
+            this.LotNoLabel.Text = "20160429";
+            this.LotNoLabel.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            this.LotNoLabel.WordWrap = false;
+            // 
+            // xrLabel6
+            // 
+            this.xrLabel6.Borders = DevExpress.XtraPrinting.BorderSide.None;
+            this.xrLabel6.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
+            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 235.4085F);
+            this.xrLabel6.Name = "xrLabel6";
+            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
+            this.xrLabel6.SizeF = new System.Drawing.SizeF(263.9584F, 30.54175F);
+            this.xrLabel6.StylePriority.UseBorders = false;
+            this.xrLabel6.StylePriority.UseFont = false;
+            this.xrLabel6.StylePriority.UseTextAlignment = false;
+            this.xrLabel6.Text = "LOTE";
+            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
+            // 
             // xrLabel5
             // 
             this.xrLabel5.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel5.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Bold);
-            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 389.5334F);
+            this.xrLabel5.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 403.0751F);
             this.xrLabel5.Name = "xrLabel5";
             this.xrLabel5.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel5.SizeF = new System.Drawing.SizeF(263.9584F, 16.08319F);
@@ -116,7 +144,7 @@ namespace GT.Trace.Labels.Templates
             // 
             this.accountEmpl.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.accountEmpl.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Bold);
-            this.accountEmpl.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 405.6166F);
+            this.accountEmpl.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 419.1583F);
             this.accountEmpl.Name = "accountEmpl";
             this.accountEmpl.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.accountEmpl.SizeF = new System.Drawing.SizeF(263.9584F, 22.0419F);
@@ -125,12 +153,12 @@ namespace GT.Trace.Labels.Templates
             this.accountEmpl.StylePriority.UseTextAlignment = false;
             this.accountEmpl.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // txtPartDesc
+            // PartDescriptionLabel
             // 
             this.PartDescriptionLabel.CanGrow = false;
             this.PartDescriptionLabel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PartDescriptionLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 135.3253F);
-            this.PartDescriptionLabel.Name = "txtPartDesc";
+            this.PartDescriptionLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 148.867F);
+            this.PartDescriptionLabel.Name = "PartDescriptionLabel";
             this.PartDescriptionLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.PartDescriptionLabel.SizeF = new System.Drawing.SizeF(267.0804F, 17.16661F);
             this.PartDescriptionLabel.StylePriority.UseFont = false;
@@ -139,12 +167,12 @@ namespace GT.Trace.Labels.Templates
             this.PartDescriptionLabel.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.PartDescriptionLabel.WordWrap = false;
             // 
-            // txtSupplier
+            // SupplierLabel
             // 
             this.SupplierLabel.CanGrow = false;
             this.SupplierLabel.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SupplierLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 305.8667F);
-            this.SupplierLabel.Name = "txtSupplier";
+            this.SupplierLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 319.4084F);
+            this.SupplierLabel.Name = "SupplierLabel";
             this.SupplierLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.SupplierLabel.SizeF = new System.Drawing.SizeF(263.9584F, 29.83328F);
             this.SupplierLabel.StylePriority.UseFont = false;
@@ -156,7 +184,7 @@ namespace GT.Trace.Labels.Templates
             // 
             this.xrLabel4.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel4.Font = new System.Drawing.Font("Verdana", 10F, System.Drawing.FontStyle.Bold);
-            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(7.919598F, 284.3668F);
+            this.xrLabel4.LocationFloat = new DevExpress.Utils.PointFloat(7.919598F, 297.9085F);
             this.xrLabel4.Name = "xrLabel4";
             this.xrLabel4.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel4.SizeF = new System.Drawing.SizeF(263.9584F, 21.49994F);
@@ -166,18 +194,18 @@ namespace GT.Trace.Labels.Templates
             this.xrLabel4.Text = "PROVEEDOR";
             this.xrLabel4.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // txtID
+            // EtiIDLabel
             // 
             this.EtiIDLabel.AutoModule = true;
             this.EtiIDLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EtiIDLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 10.00001F);
+            this.EtiIDLabel.LocationFloat = new DevExpress.Utils.PointFloat(9.999998F, 10.00001F);
             this.EtiIDLabel.Module = 1F;
-            this.EtiIDLabel.Name = "txtID";
+            this.EtiIDLabel.Name = "EtiIDLabel";
             this.EtiIDLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(10, 10, 0, 0, 100F);
-            this.EtiIDLabel.SizeF = new System.Drawing.SizeF(267.0804F, 61.08375F);
+            this.EtiIDLabel.SizeF = new System.Drawing.SizeF(265.0001F, 74.62543F);
             this.EtiIDLabel.StylePriority.UseFont = false;
             this.EtiIDLabel.StylePriority.UseTextAlignment = false;
-            this.EtiIDLabel.Symbology = eaN128Generator1;
+            this.EtiIDLabel.Symbology = qrCodeGenerator1;
             this.EtiIDLabel.Text = "E123456";
             this.EtiIDLabel.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleLeft;
             // 
@@ -185,7 +213,7 @@ namespace GT.Trace.Labels.Templates
             // 
             this.xrLabel36.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel36.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Italic);
-            this.xrLabel36.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 427.6584F);
+            this.xrLabel36.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 441.2001F);
             this.xrLabel36.Name = "xrLabel36";
             this.xrLabel36.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel36.SizeF = new System.Drawing.SizeF(71.47926F, 18.75F);
@@ -198,7 +226,7 @@ namespace GT.Trace.Labels.Templates
             // xrLabel12
             // 
             this.xrLabel12.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(156.0352F, 446.4084F);
+            this.xrLabel12.LocationFloat = new DevExpress.Utils.PointFloat(156.0352F, 459.1666F);
             this.xrLabel12.Name = "xrLabel12";
             this.xrLabel12.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel12.SizeF = new System.Drawing.SizeF(115.8428F, 20.20831F);
@@ -211,10 +239,10 @@ namespace GT.Trace.Labels.Templates
             // 
             this.printedText.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.printedText.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printedText.LocationFloat = new DevExpress.Utils.PointFloat(79.39886F, 427.6586F);
+            this.printedText.LocationFloat = new DevExpress.Utils.PointFloat(79.39886F, 441.2003F);
             this.printedText.Name = "printedText";
             this.printedText.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.printedText.SizeF = new System.Drawing.SizeF(192.4792F, 18.74994F);
+            this.printedText.SizeF = new System.Drawing.SizeF(192.4792F, 17.96634F);
             this.printedText.StylePriority.UseBorders = false;
             this.printedText.StylePriority.UseFont = false;
             this.printedText.StylePriority.UseTextAlignment = false;
@@ -225,7 +253,7 @@ namespace GT.Trace.Labels.Templates
             // 
             this.xrLabel9.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel9.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Bold);
-            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 335.7F);
+            this.xrLabel9.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 349.2417F);
             this.xrLabel9.Name = "xrLabel9";
             this.xrLabel9.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel9.SizeF = new System.Drawing.SizeF(263.9584F, 18.16644F);
@@ -235,12 +263,12 @@ namespace GT.Trace.Labels.Templates
             this.xrLabel9.Text = "CANTIDAD";
             this.xrLabel9.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // txtTQty
+            // QuantityLabel
             // 
             this.QuantityLabel.CanGrow = false;
             this.QuantityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 22F, System.Drawing.FontStyle.Bold);
-            this.QuantityLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 353.8665F);
-            this.QuantityLabel.Name = "txtTQty";
+            this.QuantityLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 367.4081F);
+            this.QuantityLabel.Name = "QuantityLabel";
             this.QuantityLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.QuantityLabel.SizeF = new System.Drawing.SizeF(263.9584F, 35.66705F);
             this.QuantityLabel.StylePriority.UseFont = false;
@@ -249,17 +277,17 @@ namespace GT.Trace.Labels.Templates
             this.QuantityLabel.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.QuantityLabel.WordWrap = false;
             // 
-            // txtMFDate
+            // MfgDateLabel
             // 
             this.MfgDateLabel.CanGrow = false;
             this.MfgDateLabel.Font = new System.Drawing.Font("Verdana", 7F, System.Drawing.FontStyle.Bold);
-            this.MfgDateLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 193.0747F);
-            this.MfgDateLabel.Name = "txtMFDate";
+            this.MfgDateLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 206.6164F);
+            this.MfgDateLabel.Name = "MfgDateLabel";
             this.MfgDateLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.MfgDateLabel.SizeF = new System.Drawing.SizeF(263.9584F, 28.79205F);
             this.MfgDateLabel.StylePriority.UseFont = false;
             this.MfgDateLabel.StylePriority.UseTextAlignment = false;
-            this.MfgDateLabel.Text = "15-OCT-17 9:48:52 PM";
+            this.MfgDateLabel.Text = "08-OCT-97 10:30:00 PM";
             this.MfgDateLabel.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             this.MfgDateLabel.WordWrap = false;
             // 
@@ -267,7 +295,7 @@ namespace GT.Trace.Labels.Templates
             // 
             this.xrLabel3.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel3.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
-            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 162.5329F);
+            this.xrLabel3.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 176.0746F);
             this.xrLabel3.Name = "xrLabel3";
             this.xrLabel3.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel3.SizeF = new System.Drawing.SizeF(263.9584F, 30.54175F);
@@ -281,7 +309,7 @@ namespace GT.Trace.Labels.Templates
             // 
             this.xrLabel2.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel2.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
-            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(194.4596F, 71.08377F);
+            this.xrLabel2.LocationFloat = new DevExpress.Utils.PointFloat(194.4596F, 84.62543F);
             this.xrLabel2.Name = "xrLabel2";
             this.xrLabel2.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel2.SizeF = new System.Drawing.SizeF(80.54041F, 13.87503F);
@@ -291,17 +319,17 @@ namespace GT.Trace.Labels.Templates
             this.xrLabel2.Text = "REV";
             this.xrLabel2.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
             // 
-            // txtRev
+            // RevisionLabel
             // 
             this.RevisionLabel.CanGrow = false;
             this.RevisionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.RevisionLabel.LocationFloat = new DevExpress.Utils.PointFloat(195.918F, 84.95878F);
-            this.RevisionLabel.Name = "txtRev";
+            this.RevisionLabel.LocationFloat = new DevExpress.Utils.PointFloat(195.918F, 98.50044F);
+            this.RevisionLabel.Name = "RevisionLabel";
             this.RevisionLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.RevisionLabel.SizeF = new System.Drawing.SizeF(79.08203F, 26.20844F);
+            this.RevisionLabel.SizeF = new System.Drawing.SizeF(75.95992F, 26.20844F);
             this.RevisionLabel.StylePriority.UseFont = false;
             this.RevisionLabel.StylePriority.UseTextAlignment = false;
-            this.RevisionLabel.Text = "XC010";
+            this.RevisionLabel.Text = "OG097";
             this.RevisionLabel.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             this.RevisionLabel.WordWrap = false;
             // 
@@ -309,7 +337,7 @@ namespace GT.Trace.Labels.Templates
             // 
             this.txtRevAnt.CanGrow = false;
             this.txtRevAnt.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Bold);
-            this.txtRevAnt.LocationFloat = new DevExpress.Utils.PointFloat(195.918F, 111.1672F);
+            this.txtRevAnt.LocationFloat = new DevExpress.Utils.PointFloat(195.918F, 124.7089F);
             this.txtRevAnt.Name = "txtRevAnt";
             this.txtRevAnt.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.txtRevAnt.SizeF = new System.Drawing.SizeF(42.07318F, 24.1581F);
@@ -324,7 +352,7 @@ namespace GT.Trace.Labels.Templates
             // 
             this.txtRevBy.CanGrow = false;
             this.txtRevBy.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Bold);
-            this.txtRevBy.LocationFloat = new DevExpress.Utils.PointFloat(237.9912F, 111.1672F);
+            this.txtRevBy.LocationFloat = new DevExpress.Utils.PointFloat(237.9912F, 124.7089F);
             this.txtRevBy.Name = "txtRevBy";
             this.txtRevBy.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.txtRevBy.SizeF = new System.Drawing.SizeF(37.00879F, 24.1581F);
@@ -340,20 +368,20 @@ namespace GT.Trace.Labels.Templates
             this.PartNoLabel.AutoWidth = true;
             this.PartNoLabel.CanGrow = false;
             this.PartNoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold);
-            this.PartNoLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 84.95881F);
+            this.PartNoLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 98.50047F);
             this.PartNoLabel.Name = "PartNoLabel";
             this.PartNoLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.PartNoLabel.SizeF = new System.Drawing.SizeF(186.54F, 50.36654F);
             this.PartNoLabel.StylePriority.UseFont = false;
             this.PartNoLabel.StylePriority.UseTextAlignment = false;
-            this.PartNoLabel.Text = "AEM5-636-2101303-1";
+            this.PartNoLabel.Text = "AEM0-429-1605209-7";
             this.PartNoLabel.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter;
             // 
             // xrLabel1
             // 
             this.xrLabel1.Borders = DevExpress.XtraPrinting.BorderSide.None;
             this.xrLabel1.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
-            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 71.08377F);
+            this.xrLabel1.LocationFloat = new DevExpress.Utils.PointFloat(7.919566F, 84.62543F);
             this.xrLabel1.Name = "xrLabel1";
             this.xrLabel1.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
             this.xrLabel1.SizeF = new System.Drawing.SizeF(186.54F, 13.87505F);
@@ -376,34 +404,6 @@ namespace GT.Trace.Labels.Templates
             this.BottomMargin.Name = "BottomMargin";
             this.BottomMargin.Padding = new DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 100F);
             this.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft;
-            // 
-            // xrLabel6
-            // 
-            this.xrLabel6.Borders = DevExpress.XtraPrinting.BorderSide.None;
-            this.xrLabel6.Font = new System.Drawing.Font("Verdana", 8F, System.Drawing.FontStyle.Bold);
-            this.xrLabel6.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 221.8668F);
-            this.xrLabel6.Name = "xrLabel6";
-            this.xrLabel6.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.xrLabel6.SizeF = new System.Drawing.SizeF(263.9584F, 30.54175F);
-            this.xrLabel6.StylePriority.UseBorders = false;
-            this.xrLabel6.StylePriority.UseFont = false;
-            this.xrLabel6.StylePriority.UseTextAlignment = false;
-            this.xrLabel6.Text = "LOTE";
-            this.xrLabel6.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            // 
-            // LotNoLabel
-            // 
-            this.LotNoLabel.CanGrow = false;
-            this.LotNoLabel.Font = new System.Drawing.Font("Verdana", 7F, System.Drawing.FontStyle.Bold);
-            this.LotNoLabel.LocationFloat = new DevExpress.Utils.PointFloat(7.919574F, 252.4085F);
-            this.LotNoLabel.Name = "LotNoLabel";
-            this.LotNoLabel.Padding = new DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100F);
-            this.LotNoLabel.SizeF = new System.Drawing.SizeF(263.9584F, 28.79205F);
-            this.LotNoLabel.StylePriority.UseFont = false;
-            this.LotNoLabel.StylePriority.UseTextAlignment = false;
-            this.LotNoLabel.Text = "2022123";
-            this.LotNoLabel.TextAlignment = DevExpress.XtraPrinting.TextAlignment.MiddleCenter;
-            this.LotNoLabel.WordWrap = false;
             // 
             // SubAssemblyEtiLabel
             // 
