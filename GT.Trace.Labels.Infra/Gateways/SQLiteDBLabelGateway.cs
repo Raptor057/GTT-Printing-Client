@@ -285,6 +285,7 @@ namespace GT.Trace.Labels.Infra.Gateways
                         Quantity = baseLabel.Quantity,
                         LabelTypeID = (int)baseLabel.Type,
                         Origen = baseLabel.Origen //se agrego esto a ver si jala, la verdad no lo se
+                        //Update: esto si jalo.
                     };
                     _ = con.Insert(dbLabel);
                     baseLabel.LabelID = dbLabel.LabelID;

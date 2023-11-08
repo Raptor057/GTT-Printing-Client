@@ -32,7 +32,7 @@
     <SuiteName>GT Traceability v2</SuiteName>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>15</ApplicationRevision>
+    <ApplicationRevision>21</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
@@ -62,10 +62,10 @@
     <ApplicationIcon>icons8-label-printer-32.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>79B03AA819A5770FB12AE2FF976BA624B8C64238</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>FFAC799CC1999B0080D4092770DFD7F3C57A6C49</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>GT.Trace.Labels.WpfPrintingClient_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>GT.Trace.Labels.WpfPrintingClient_1_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>
@@ -280,6 +280,7 @@
     <Content Include="appsettings.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="GT.Trace.Labels.WpfPrintingClient_1_TemporaryKey.pfx" />
     <None Include="GT.Trace.Labels.WpfPrintingClient_TemporaryKey.pfx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

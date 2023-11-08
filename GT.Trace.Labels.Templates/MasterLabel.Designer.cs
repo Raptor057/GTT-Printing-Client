@@ -612,7 +612,7 @@ namespace GT.Trace.Labels.Templates
             this.Label4.Name = "Label4";
             this.Label4.Size = new System.Drawing.Size(153, 22);
             this.Label4.TabIndex = 154;
-            this.Label4.Text = "302 Lorenaly Drive, Suite E.\nBrownsville, Tx. 78526 USA";
+            this.Label4.Text = "2600 Quality Lane\r\nBrownsville, TX, 78526 USA";
             // 
             // WinControlContainer1
             // 
