@@ -23,9 +23,18 @@ namespace GT.Trace.Labels.Templates.UseCases.PrintMasterLabel
                 request.Approver,
                 request.ApprovalDate,
                 //Se agrega el Origen para ingresar en las etiquetas.
-                request.Origen))
+                request.Origen,
+                request.Www))
             {
-                label.CreateAndPrintDocument(request);
+                if (request.Www != "" || request.Www != null)
+                {
+                    using (KitSavLabel labelKit = new KitSavLabel(request.CustomerPartNo,
+                        request.PartNo, request.PartDescription, request.Www))
+                    {
+                        labelKit.CreateAndPrintDocument(request);
+                    }
+                }
+                    label.CreateAndPrintDocument(request);
             }
 
             return Unit.Task;

@@ -30,5 +30,8 @@ namespace GT.Trace.Labels.Infra.DataStores.SqlDB.Entities
 
         //Se agrego Campo Origen Faltante RA: 04 / 19 /2023
         public string Origen { get; set; }
+
+        //Se agrego Campo Www Faltante RA: 04 / 16 /2024
+        public string Www { get; set; }
     }
 }

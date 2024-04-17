@@ -4,7 +4,7 @@ namespace GT.Trace.Labels.Templates
 {
     public partial class MasterLabel
     {
-        public MasterLabel(string po, string julianDate, string customerPartNo, string revision, string partNo, string customer, string partDescription, DateTime date, int quantity, string lineName, long masterID, string approver, DateTime? approvalDate, string Origen)
+        public MasterLabel(string po, string julianDate, string customerPartNo, string revision, string partNo, string customer, string partDescription, DateTime date, int quantity, string lineName, long masterID, string approver, DateTime? approvalDate, string Origen, string www)
         {
             InitializeComponent();
 

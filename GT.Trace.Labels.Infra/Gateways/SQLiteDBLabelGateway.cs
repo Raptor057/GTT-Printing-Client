@@ -166,7 +166,8 @@ namespace GT.Trace.Labels.Infra.Gateways
                                     Revision = container.Revision,
                                     MasterID = container.MasterID.Value,
                                     LineName = label.LineName,
-                                    Origen = label.Origen //Se agrego Campo Origen Faltante RA: 04 / 19 /2023
+                                    Origen = label.Origen, //Se agrego Campo Origen Faltante RA: 04 / 19 /2023
+                                    Www = label.Www //Se agrego Campo Www RA: 04 / 16 /2024
 
                                 };
 
@@ -284,8 +285,10 @@ namespace GT.Trace.Labels.Infra.Gateways
                         LineName = baseLabel.LineName,
                         Quantity = baseLabel.Quantity,
                         LabelTypeID = (int)baseLabel.Type,
-                        Origen = baseLabel.Origen //se agrego esto a ver si jala, la verdad no lo se
+                        Origen = baseLabel.Origen, //se agrego esto a ver si jala, la verdad no lo se
                         //Update: esto si jalo.
+                        Www = baseLabel.Www //Se agrego este campo 04 / 16 / 2024
+
                     };
                     _ = con.Insert(dbLabel);
                     baseLabel.LabelID = dbLabel.LabelID;

@@ -107,6 +107,12 @@
     <Compile Include="LabelBase.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="KitSavLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="KitSavLabel.Designer.cs">
+      <DependentUpon>KitSavLabel.cs</DependentUpon>
+    </Compile>
     <Compile Include="MasterLabel.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -139,6 +145,8 @@
       <DependentUpon>SubAssemblyEtiLabel.cs</DependentUpon>
     </Compile>
     <Compile Include="UseCases\PrintingRequest.cs" />
+    <Compile Include="UseCases\PrintKitSavLabel\PrintKitSavLabelHandler.cs" />
+    <Compile Include="UseCases\PrintKitSavLabel\PrintKitSavLabelRequest.cs" />
     <Compile Include="UseCases\PrintReturnLabel\PrintReturnLabelHandler.cs" />
     <Compile Include="UseCases\PrintReturnLabel\PrintReturnLabelRequest.cs" />
     <Compile Include="UseCases\PrintPickingLabel\PrintPickingLabelHandler.cs" />
@@ -170,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LabelBase.resx">
       <DependentUpon>LabelBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitSavLabel.resx">
+      <DependentUpon>KitSavLabel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MasterLabel.resx">
       <DependentUpon>MasterLabel.cs</DependentUpon>

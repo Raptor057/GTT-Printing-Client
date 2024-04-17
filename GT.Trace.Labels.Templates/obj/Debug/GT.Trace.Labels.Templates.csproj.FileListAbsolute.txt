@@ -668,7 +668,6 @@ C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\b
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\bin\Debug\DevExpress.Charts.v17.1.Core.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\bin\Debug\DevExpress.XtraGauges.v17.1.Core.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\bin\Debug\DevExpress.PivotGrid.v17.1.Core.dll
-C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\bin\Debug\DevExpress.XtraGrid.v17.1.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\bin\Debug\DevExpress.Xpf.Grid.v17.1.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\bin\Debug\DevExpress.Xpf.Layout.v17.1.Core.dll
@@ -762,7 +761,6 @@ C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\b
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\bin\Debug\es\DevExpress.XtraGrid.v17.1.resources.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\bin\Debug\ja\DevExpress.XtraGrid.v17.1.resources.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\bin\Debug\ru\DevExpress.XtraGrid.v17.1.resources.dll
-C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\obj\Debug\GT.Trace.Labels.Templates.csproj.AssemblyReference.cache
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\obj\Debug\GT.Trace.Labels.Templates.JuniorLabel.resources
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\obj\Debug\GT.Trace.Labels.Templates.MasterLabel.resources
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\obj\Debug\GT.Trace.Labels.Templates.MaterialReturnLabel.resources
@@ -777,3 +775,5 @@ C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\o
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\obj\Debug\GT.Trace.Labels.Templates.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\obj\Debug\GT.Trace.Labels.Templates.pdb
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\obj\Debug\GT.Trace.Labels.Templates.LabelBase.resources
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\obj\Debug\GT.Trace.Labels.Templates.KitSavLabel.resources
+C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Templates\obj\Debug\GT.Trace.Labels.Templates.csproj.AssemblyReference.cache

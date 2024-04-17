@@ -41,5 +41,7 @@ namespace GT.Trace.Labels.Templates.UseCases.PrintMasterLabel
 
         //Se agrega el Origen de a la etiqueta master.
         public string Origen { get; set; }
+
+        public string Www { get; set; }
     }
 }

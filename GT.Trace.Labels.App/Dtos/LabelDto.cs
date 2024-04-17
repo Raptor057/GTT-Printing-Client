@@ -30,5 +30,7 @@ namespace GT.Trace.Labels.App.Dtos
         public bool IsFailure => !(LastPrintingSuccessStatus ?? true);
 
         public string Origen { get; set; } //Se agrego Campo Origen Faltante RA: 04 / 19 /2023
+
+        public string Www { get; set; } //Se agrego Campo Www Faltante RA: 04 / 16 /2024
     }
 }
