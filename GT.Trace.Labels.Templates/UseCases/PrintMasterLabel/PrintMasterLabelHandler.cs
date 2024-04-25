@@ -26,7 +26,7 @@ namespace GT.Trace.Labels.Templates.UseCases.PrintMasterLabel
                 request.Origen,
                 request.Www))
             {
-                if (request.Www != "" || request.Www != null)
+                if (request.Www.Trim() != "" || request.Www.Trim() != null)
                 {
                     using (KitSavLabel labelKit = new KitSavLabel(request.CustomerPartNo,
                         request.PartNo, request.PartDescription, request.Www))
@@ -36,7 +36,6 @@ namespace GT.Trace.Labels.Templates.UseCases.PrintMasterLabel
                 }
                     label.CreateAndPrintDocument(request);
             }
-
             return Unit.Task;
         }
     }
