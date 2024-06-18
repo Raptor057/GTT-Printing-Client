@@ -672,7 +672,6 @@ C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Infra\bin\D
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Infra\bin\Debug\DevExpress.Data.v17.1.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Infra\bin\Debug\DevExpress.XtraPrinting.v17.1.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Infra\bin\Debug\System.Buffers.dll
-C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Infra\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Infra\bin\Debug\System.Numerics.Vectors.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Infra\bin\Debug\DevExpress.DataAccess.v17.1.dll
 C:\Dev\General_Transmissions_Dev\GTT Printing Client\GT.Trace.Labels.Infra\bin\Debug\DevExpress.Office.v17.1.Core.dll
